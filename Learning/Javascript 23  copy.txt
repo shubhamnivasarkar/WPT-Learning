@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+ fieldset{
+width: 20%
+
+}
+</style>
+    <script>
+	      function AreaCirumference(radius){
+		        Radius = parseInt(document.getElementById("radius").value);
+				
+				var area = 3.14 * Radius * Radius;
+                var Circumference = 2 * 3.14 * Radius;				
+		  
+		      document.getElementById("outputArea").innerHTML = "Area is " + area;
+              document.getElementById("outputCircumference").innerHTML = "Circumference is " + Circumference;
+		  }
+	
+	
+	</script>
+</head>
+   
+    <body>
+          <form>
+		<fieldset>
+                    <div>
+                      
+                        <P style="color:blue;">
+						   <strong>Enter Radius :</strong>
+						     <input type="text" id="radius" name="radius"  placeholder="Enter the Radius" ></P>
+                       
+					   <input type="button" value="Display" id="" onclick="AreaCirumference(radius);"/></P>
+			     </div>
+     
+           </form>
+		   
+         <p id="outputArea"> </p>
+         <p id="outputCircumference"> </p>
+</fieldset>
+</form>
+</body>
+</html>

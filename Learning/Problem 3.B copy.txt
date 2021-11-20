@@ -1,0 +1,56 @@
+<html>
+<head>
+Problem 4
+</head>
+<body>
+<h1>
+<center>Table 3.B
+</h1>
+<table border=1 cellspacing= 0 cellpadding=5>
+<tr>
+<th colspan=5>State</th>
+</tr>
+<tr>
+<th rowspan=4 widht="50%" bgcolor="cyan">East</th>
+
+<td  bgcolor="yellow">Orissa</td>
+</tr>
+<td  bgcolor="yellow">Bihar</td>
+</tr>
+<td  bgcolor="yellow">West Bengal</td>
+</tr>
+<td  bgcolor="yellow">Mizoram</td>
+</tr>
+</tr>
+<tr>
+<th rowspan=3 widht="50%" bgcolor="cyan">West</th>
+<td>Maharashtra</td>
+</tr>
+<td>Gujarat</td>
+</tr>
+<td>Karnataka</td>
+</tr>
+</tr>
+<tr>
+<th rowspan=3 width="50%" bgcolor="cyan">South</th>
+<td>Andhra Pradesh</td>
+</tr>
+<td>Tamil Nadu</td>
+</tr>
+<td>Kerala</td>
+</tr>
+</tr>
+<tr>
+<th rowspan= 4 widht="50%" bgcolor="cyan">North</th>
+<td  bgcolor="green">Jammu and Kashmir</td>
+</tr>
+<td  bgcolor="green">Himachal Pradesh</td>
+</tr>
+<td  bgcolor="green">Punjab</td>
+</tr>
+<td  bgcolor="green">Uttar Pradesh</td>
+</tr>
+</tr>
+
+</body>
+</html>

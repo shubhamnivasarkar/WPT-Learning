@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function f1(){
+var num = parseInt(prompt("enter your number"));
+alert( + num)
+var string = prompt("enter a string");
+for(i=0; i < num; i++){
+document.write("<br>" + string);
+}
+}
+</script>
+</head>
+<body>
+<script>
+ f1();
+</script>
+</body>
+</html>

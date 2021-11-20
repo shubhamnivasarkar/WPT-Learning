@@ -1,0 +1,53 @@
+<section class="section form-2">
+  <div class="wrapper">
+    <h2 class="title">Create your account</h2>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input type="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>Username</td>
+            <td>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>
+              <input type="password" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password Again</td>
+            <td>
+              <input type="password" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Create Account" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <div class="hr"><span>Or,</span></div>
+    <div class="btns">
+      <button type="button" class="facebook"><i class="fab fa-facebook-f"></i></button>
+      <button type="button" class="twitter"><i class="fab fa-twitter"></i></button>
+    </div>
+  </div>
+</section>
+

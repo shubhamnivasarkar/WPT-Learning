@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>order details</TITLE>
+		<STYLE>
+				#span1,#span2 {color:red}
+		</STYLE>
+		<SCRIPT>
+				function checkName(){
+					var custname = document.getElementById("cname").value;
+						if(custname.length<6){
+							document.getElementById("span1").innerHTML = "Cust name cannot be < 6 character";
+							document.getElementById("cname").focus();
+							document.getElementById("cname").select();
+						}
+						else{
+							document.getElementById("span1").innerHTML = "";
+						}
+				}
+				function checkDate(){
+					var d1 = document.getElementById("bdate").value;
+					var d2 = document.getElementById("sdate").value;
+						if(d1>d2){
+							document.getElementById("span2").innerHTML = "Billing date cannot be > shipping date";
+						}
+						else{
+							document.getElementById("span2").innerHTML = "";
+						}
+				}
+			function display(){
+					myWindow = window.open("","","width=300,height=200");
+					
+					myWindow.document.write("Order ID:"+document.form1.oid.value+"<br>");
+					myWindow.document.write("Cust Name:"+document.form1.cname.value+"<br>");
+					myWindow.document.write("Billing date:"+document.form1.bdate.value+"<br>");
+					myWindow.document.write("Shipping date:"+document.form1.sdate.value+"<br>");
+					myWindow.document.write("Order Total:"+document.form1.total.value+"<br>");
+			} 
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<form name="form1">
+			Order ID: <input type="text" name="oid" id="oid" required><br>
+
+			Customer Name: <input type="text" name="cname" id="cname" required onchange="checkName()"><span id="span1"></span><br>
+
+			Enter Billing date:	<input type="date" name="bdate" id="bdate" required onchange="checkDate()><span id="span2"></span><br>
+
+			Enter Shipping date: <input type="date" name="sdate" id="sdate" required onchange="checkDate()"><br>
+
+			Order Total: <input type="text" name="total" id="total" required><br>
+
+			<input type="submit" value="display" onclick="display()"><br>
+		</FORM>
+	</BODY>
+</HTML>

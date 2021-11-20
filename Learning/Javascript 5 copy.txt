@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+            var n = parseInt(prompt("enter 5 digit number"));
+            var sum= 0;
+            var c = 0;
+            while(n>0){
+                c = n%10;
+                sum+=c
+                parseInt(n = n/10);
+            }
+            document.write("the sum of digits are ");
+            document.write(sum);
+        }
+        </script>
+    </head>
+    <body>
+        <script>
+            f1();
+        </script>
+    </body>
+</html>

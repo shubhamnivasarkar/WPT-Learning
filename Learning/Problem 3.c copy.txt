@@ -1,0 +1,77 @@
+<html>
+<head>
+Problem 3.C
+</head>
+<body>
+<h1>
+<center>Table 3.C
+</h1>
+<table border=1 Cellspacing=5 cellpadding=5 bgcolor="grey">
+<tr>
+<th colspan=7 bgcolor="yellow">January</th>
+</tr>
+<tr>
+<td bgcolor="fuchsia">Sun</td>
+<td bgcolor="fuchsia">Mon</td>
+<td bgcolor="fuchsia">Tue</td>
+<td bgcolor="fuchsia">Wed</td>
+<td bgcolor="fuchsia">Thu</td>
+<td bgcolor="fuchsia">Fri</td>
+<td bgcolor="fuchsia">Sat</td>
+</tr>
+<tr>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="yellow">1</td>
+<td bgcolor="cyan">2</td>
+</tr>
+<tr>
+<td bgcolor="green">3</td>
+<td bgcolor="white">4</td>
+<td bgcolor="white">5</td>
+<td bgcolor="white">6</td>
+<td bgcolor="white">7</td>
+<td bgcolor="white">8</td>
+<td bgcolor="cyan">9</td>
+</tr>
+<tr>
+<td bgcolor="green">10</td>
+<td bgcolor="white">11</td>
+<td bgcolor="white">12</td>
+<td bgcolor="white">13</td>
+<td bgcolor="white">14</td>
+<td bgcolor="white">15</td>
+<td bgcolor="cyan">16</td>
+</tr>
+<tr>
+<td bgcolor="green">17</td>
+<td bgcolor="white">18</td>
+<td bgcolor="white">19</td>
+<td bgcolor="white">20</td>
+<td bgcolor="white">21</td>
+<td bgcolor="white">22</td>
+<td bgcolor="cyan">23</td>
+</tr>
+<tr>
+<td bgcolor="green">24</td>
+<td bgcolor="white">25</td>
+<td bgcolor="yellow">26</td>
+<td bgcolor="white">27</td>
+<td bgcolor="white">28</td>
+<td bgcolor="white">29</td>
+<td bgcolor="cyan">30</td>
+</tr>
+<tr>
+<td bgcolor="green">31</td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+<td bgcolor="white"> </td>
+</tr>
+</body>
+</html>

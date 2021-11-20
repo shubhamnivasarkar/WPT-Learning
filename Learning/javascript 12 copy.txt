@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Compound interest
+        </title>
+        <script>
+            function ci(p,r,n){
+            x=1+(r/100);
+            t=1;
+            for(i=1;i<=n;i++){
+                t=t*x;
+            }
+            ci=parseInt((p*t)-p);
+            document.write("calculate compound interest<br>");
+            document.write("Principal-"+p+"rs<br>");
+            document.write("Interest-"+r+"%<br>");
+            document.write("year-"+n+"yr<br>");
+            document.write("Compound interest-"+ci+"rs<br>");
+}
+        </script>
+    </head>
+    <body>
+        <script>
+            var p = parseInt(prompt("principal"));
+            var r= parseInt(prompt("rate of interest"));
+            var n= parseInt(prompt("year"));
+            ci(p,r,n);
+        </script>
+    </body>
+</html>

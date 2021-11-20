@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function PowerOfNumber(num,pow)
+              {
+		        if(pow == 0)
+		           	return 1;
+	           	else
+		         	return num * PowerOfNumber(num,pow-1);
+		
+	          }
+
+        </script>
+    </head>
+    <script>
+          var num = parseInt(prompt("Enter base "));
+
+          var pow = parseInt(prompt("Enter power"));     
+         // res = PowerOfNumber(num,pow);   
+          document.write ("<br>"+ PowerOfNumber(num,pow));   
+    </script>
+</html>

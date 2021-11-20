@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            var a=0;
+            var b=1;
+            document.write(" "+a+" "+b);
+            var n=10
+            var c=2;
+            while(c<n){
+                var t=a+b;
+                a=b;
+                b=t;
+                document.write(" "+t);
+                c++;
+            }            
+        </script>
+    </head>
+</html>

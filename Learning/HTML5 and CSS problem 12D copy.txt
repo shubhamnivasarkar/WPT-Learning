@@ -1,0 +1,47 @@
+<section class="section form-4">
+  <div class="wrapper">
+    <h2 class="title">Get In Touch</h2>
+    <small>
+      Fill out the super swanky HTML5 contact form below to get in touch with us! Please provide us much information as possible for us to help ypu with your enquiry. 😀
+    </small>
+    <form>
+      <div class="form">
+        <div class="field">
+          <input type="text" name="name" placeholder=" ">
+          <label>Name <span>*</span></label>
+          <span></span>
+        </div>
+        <div class="field">
+          <input type="text" name="name" placeholder=" ">
+          <label>Email <span>*</span></label>
+          <span></span>
+        </div>
+        <div class="field">
+          <input type="text" name="name" placeholder=" ">
+          <label>Telephone</label>
+          <span></span>
+        </div>
+        <div class="field">
+          <select>
+            <option value="General">General</option>
+            <option value="Sales">Sales</option>
+            <option value="Technical">Technical</option>
+            <option value="Customer">Customer</option>
+            <option value="Partnet">Partner</option>
+          </select>
+          <label class="label">Enquiry</label>
+          <span></span>
+        </div>
+        <div class="field">
+          <textarea></textarea>
+          <label class="label">Message <span>*</span></label>
+          <span></span>
+        </div>
+        <div class="submit">
+          <small>* Indicate a required field.</small>
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

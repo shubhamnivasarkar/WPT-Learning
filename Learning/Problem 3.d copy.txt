@@ -1,0 +1,64 @@
+<html>
+<head>
+<h1>
+<center>TABLE 3.D
+</h1>
+</head>
+<body>
+
+<table cellspacing=0 border=1 cellpadding=5 bgcolor="grey">
+<caption>Score table</caption>
+<tr><th rowspan="3"  valign="top">Player Name</th></tr>
+<tr><th colspan="5">Score</th></tr>
+<tr>
+<td bgcolor="dimgray">Match 1</td>
+<td bgcolor="dimgray">Match 2</td>
+<td bgcolor="dimgray">Match 3</td>
+<td bgcolor="dimgray">Match 4</td>
+</tr>
+<tr>
+<td>Sachin Tendulkar</td>
+<td>53</td>
+<td bgcolor="yellow">77</td>
+<td bgcolor="cyan">109</td>
+<td>98</td>
+</tr>
+<tr>
+<td>Saurav Ganguly</td>
+<td bgcolor="cyan">123</td>
+<td>43</td>
+<td>76</td>
+<td bgcolor="yellow">101</td>
+</tr>
+<tr>
+<td>M.Azharuddin</td>
+<td bgcolor="fuchsia">120</td>
+<td>65</td>
+<td bgcolor="yellow">118</td>
+<td>12</td>
+</tr>
+</table>
+<br>
+<br>
+<table border=1 cellspacing=0 cellpadding=0>
+<tr>
+<td bgcolor="yellow">Highest score in respective match</td>
+</tr>
+</table>
+<br>
+<br>
+<table border=1 cellspacing=0 cellpadding=0>
+<tr>
+<td bgcolor="cyan">Highest score of respective player</td>
+</tr>
+</table>
+<br>
+<br>
+<table border=1 cellspacing=0 cellpadding=0>
+<tr>
+<td bgcolor="fuchsia">Highest score in respective match and of respective player</td>
+</tr>
+</table>
+
+</body>
+</html>

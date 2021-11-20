@@ -1,0 +1,11 @@
+<html>
+<head>
+Testing page
+</head>
+<body>
+<h1>
+Testing page on mac<br>
+Hello Mac
+</h1>
+</body>
+</html>

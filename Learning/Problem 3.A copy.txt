@@ -1,0 +1,44 @@
+<html>
+<head>
+PROBLEM 3
+</head>
+<body>
+<h1>
+<center> TABLE 3.A
+</h1>
+<table border=1 cellspcaing=5 cellpadding=5>
+<tr bgcolor="brown">
+<td>Username</td>
+<td>Education</td>
+<td>Location</td>
+</tr>
+<tr>
+<td>Praveen kumar</td>
+<td>B.tech</td>
+<td>Guntur</td>
+</tr>
+<tr>
+<td>Mahendra Dasari</td>
+<td>CA</td>
+<td>Cheenai</td>
+</tr>
+<tr>
+<td>Nagaraju Dasari</td>
+<td>MCA</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>Sateesh Alawala</td>
+<td>MD</td>
+<td>Vizag</td>
+</tr>
+<tr>
+<td>Sudheer</td>
+<td>B.Tech</td>
+<td>Kakinada</td>
+</tr>
+
+
+
+</body>
+</html>

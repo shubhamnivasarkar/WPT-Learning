@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js20</title>
+    <script>
+
+        function sum(array){
+            var res=0;
+            for(var i of array){
+                res += i;
+            }
+            return res;
+
+        }
+        function avg(array){
+            var result=0;
+            var count=0;
+            for(var i of array){
+                result += i;
+                count++
+            }
+            var average = (result/count);
+           return average;
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <script>
+        var array =[1,2,3,4,5];
+        document.write(" <br>The sum is: "+sum(array));
+        document.write(" <br>The average is: "+avg(array));
+
+    </script>
+    
+</body>
+</html>

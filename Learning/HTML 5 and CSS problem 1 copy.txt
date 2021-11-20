@@ -1,0 +1,11 @@
+<doctype.html>
+<html>
+<head>
+<h1>
+Problem. 1- Background colour of page to lightblue.
+</h1>
+</head>
+<body
+style="Background-color:lightblue;">
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       form {
+           border :7px solid rgb(192, 17, 177);
+           width: 395px;
+           border-radius: 5px;
+           padding:10px;
+           color: rgb(81, 145, 118);
+       }
+       h1{
+           color: black;
+           text-align: center;
+       }
+       span{
+           color: black;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="kuna">
+        <form action="sdv.php">
+           <h1>Create Account</h1>
+           <hr style="border: 1px solid rgb(48, 44, 44);background-color: rgb(49, 23, 23);"> 
+           <div>
+               First Name* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Last Name <br><input type="text" placeholder="Enter Your Name">&emsp;<input type="text" placeholder="Enter Your Last name" required><br> <br>
+              <div>Email*<br> <input type="email" placeholder="Enter Your Email" size="48px" required> <br> <br></div> 
+               Password*&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirm Password <br><input type="password" placeholder="Enter Your Password">&emsp;<input type="password" placeholder="Confirm Password" required> <br> <br>
+               Gender&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Hobbies <br> <span><input type="radio" name="h1">male</span><span><input type="radio" name="h1">Female</span> &emsp;&nbsp;<span><input type="checkbox">Music</span><span><input type="checkbox">Sport</span><span><input type="checkbox">Travel</span><span><input type="checkbox">Movies</span> <br> <br>
+               Source Of Income&emsp;&emsp;&emsp;&emsp; Income <br><input id="k" name="k" type="text" list="Job Roles"><datalist id="Job Roles">&emsp;&emsp;<input type="range">
+                <option value="Employed">
+                <option value="Unemployed">
+                <option value="Student">
+                <option value="Begginer">
+                <option value="Fresher">
+               </datalist> <br> <br>
+               Upload Your Profile Picture &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age<br><input type="submit" value="Choose File" name="submit"><small>No File Choosen</small>&emsp;&nbsp; <input type="number"> <br><br>
+               Bio <br><textarea  id="" cols="51" rows="4"></textarea>  <br>
+               <hr  style="border: 1px solid rgb(48, 44, 44);background-color: rgb(49, 23, 23);">
+               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" value="Create" style="background-color: rgb(90, 207, 207);">
+           </div>
+        </form>
+    </div>
+</body>
+</html>

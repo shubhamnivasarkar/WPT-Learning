@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+fieldset{
+width: 30%;
+Border-color : blue;
+}
+</style>
+    <script>
+	      function Multiplication(num1,num2,num3){
+		    var    number1 = parseInt(document.getElementById("num1").value);
+			var	number2 = parseInt(document.getElementById("num2").value);
+			var	number3 = parseInt(document.getElementById("num3").value);
+				 
+			var str=""
+				for(var i=number1; i<=number2; i++){
+                    var res = i*number3;
+			      var Table = document.getElementById('outputTable');
+                  str = str + i +"times "+number3 +" = "+res +"<br>"
+			          Table.innerHTML += +i+ " " + "times" + " " +number3+" " + "=" +(number3*i) + "<br/>" 
+		        }
+                document.getElementById("result").innerHTML = str;
+            
+		  }
+          function clearall(){
+             document.getElementById("result").innerHTML=""
+             document.getElementById("num1").value=""
+             document.getElementById("num2").value=""
+             document.getElementById("num3").value=""
+          }
+	
+	</script>
+</head>
+   
+    <body>
+          <form>
+		<fieldset>
+                    <div>
+                      
+                        <P style="color:blue;">
+						   <strong>Start number :</strong>
+						     <input type="text" id="num1" name="num1"  placeholder="Enter the start number" ></P>
+						
+						<P style="color:blue;">
+						   <strong>End number :</strong>
+						     <input type="text" id="num2" name="num2"  placeholder="Enter the End number" ></P>
+						
+						<P style="color:blue;">	 
+						   <strong>Mutiply By :</strong>
+						     <input type="text" id="num3" name="num3"  placeholder="Multiplication factor" ></P>
+                       
+					   <input type="button" value="Times table" id="" onclick="Multiplication(num1,num2,num3);"/></P>
+                        <br>
+                        <input type="Reset" value="Reset" id="q1" onclick="clearall()"> <br>
+                        
+			     </div>
+     		<fieldset>
+           </form>
+		   <span id= "result">
+		 <p id="outputTable"> </p
+
+        </span>
+        
+</body>
+</html>

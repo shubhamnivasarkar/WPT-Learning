@@ -1,0 +1,32 @@
+<html>
+<head>
+<h1>
+Form 6.A
+</h1>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>Create a profile</legend>
+First Name *<br>
+<input type="text" required
+placeholder="First Name"
+maxlength="30"><br>
+Last name *<br>
+<input type="text" required
+maxlength="40"
+placeholder="Last Name"><br>
+Date of Birth<br>
+<input type="date">
+<br>
+Gender<br>
+<input type="radio" name="r1">Male
+<input type="radio" name="r1">Female
+<br>
+<input type="submit" value="Create profile">
+
+
+</fieldset>
+</form>
+</body>
+</html>

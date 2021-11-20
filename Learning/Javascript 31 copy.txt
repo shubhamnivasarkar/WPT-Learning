@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<style>
+			   div
+				   {
+				   width:800px;
+				   height:500px;
+				   border : 2px solid black;
+				   padding-left:20px;
+				   }
+				   input
+				   {
+					margin-bottom:7px;
+					margin-top:7px;
+
+				   }
+				#sBill,#sCustName{
+					color:Red;
+				}
+		</style>
+		<script>
+		function sendData(){
+			
+			var sList =document.getElementsByClassName("val");
+				for(i of sList)
+					i.innerHTML="";
+		
+			var name=document.getElementById("name").value;
+			var d1= new Date(document.getElementById("d1").value);
+			var mail= document.getElementById("mail").value;
+			var luckyNum=parseInt(document.getElementById("luckyNum").value);
+			var rList=document.getElementsByName("r1");
+			var cList=document.getElementsByName("c1");
+			var gen = getGender(rList);
+			var favList=getFoodFavList(cList);
+			
+			
+			
+			var perInfo={
+				name:name,
+				d1:document.getElementById("d1").value,
+				mail:mail,
+				luckyNum:luckyNum,
+				gen:gen,
+				favList:favList.join(" "),
+			
+			
+			}
+			
+				validateName(name);
+				validateLuckyNumber(luckyNum);
+				validateOption(rList,"r1");
+				validateOption(cList,"c1");
+				validateDOB(d1);
+				
+			if(validateName(name) && validateLuckyNumber(luckyNum)&& validateOption(rList,"r1") &&validateDOB(d1)&&validateOption(cList,"c1")){
+				
+				
+				document.getElementById("resSpan").innerHTML=`You Entered <br>
+															Name: ${perInfo.name}<br>
+															Birth Date :${perInfo.d1}<br>
+															Gender : ${perInfo.gen}<br>
+															Mail ID: ${perInfo.mail}<br>
+															Lucky Number: ${perInfo.luckyNum}<br>
+															Favorite Food : ${perInfo.favList}<br>`;
+			
+			}
+			
+			var newWindow = window.open("");
+			newWindow.document.write(`You Entered the following Information<br>
+									Name: ${perInfo.name}<br>
+									Birth Date :${perInfo.d1}<br>
+									Gender : ${perInfo.gen}<br>
+									Mail ID: ${perInfo.mail}<br>
+									Lucky Number: ${perInfo.luckyNum}<br>
+									Favorite Food : ${perInfo.favList}<br>`
+			
+			);
+
+			}
+		
+		function validateName(name){
+				var regex=/^[a-zA-Z]+$/;
+					if(name.search(regex)==-1 || name.length>10){
+							document.getElementById("sName").innerHTML="Alphabets only and max length 10"
+							return false;
+							}
+				return true;
+		}
+		
+		function validateLuckyNumber(luckyNum){
+			if(luckyNum>9999 || luckyNum <0){
+				document.getElementById("sLNum").innerHTML="Four digit Number only "
+				return false;
+				}
+		return true;
+		}
+		
+		
+		function validateOption(oList,str){
+			var flag=false;
+			for (i of oList){
+				if(i.checked)
+					flag=true;
+				}
+			if(!flag){
+				if(str== "r1")
+					document.getElementById("sRad").innerHTML="Select one of the option ";
+				else
+					document.getElementById("sCheck").innerHTML="Select one of the option ";
+				return false;
+			}
+		
+		return true;
+	}
+	
+	function getGender(rList){
+					for (i of rList){
+						if(i.checked){
+						if(i.id==r1)
+							return "Male";
+						else	
+							return "Female";
+					}
+			}
+	
+	}
+	
+	function getFoodFavList(cList){
+		var favLis =new Array();
+		var count=0;
+					for (i of cList){
+						if(i.checked){
+						if(i.id=="c1"){
+							favLis[count]="Pizza"
+							count++
+						}
+						if(i.id=="c2"){
+							favLis[count]="Pasta"
+							count++
+						}
+						if(i.id=="c3"){
+							favLis[count]="Chinese"
+							count++
+						}
+						
+					}
+					}
+			return favLis;
+	
+	}
+	
+	function validateDOB(d1){
+	today=new Date();
+		if(d1.getTime()>today.getTime()){
+			document.getElementById("sDob").innerHTML="Invalid Date of Birth";
+			return false
+			}
+		return true;	
+	}
+	</script>
+	</head>
+	<body>
+	<div>
+		<form>
+		<table>
+			<tr>
+			<td>Name :</td>
+			<td><input type ="text" id ="name" required><span class="val" id ="sName"></span></td>
+			</tr>
+			
+			<tr>
+			<td>Birth Date:</td>
+			<td><input type ="date" id ="d1" required><span class="val" id ="sDob"></span></td>
+			</tr>
+			
+			<tr>
+			<td>Email Address:</td>
+			<td><input type ="email" id ="mail" required placeholder="name@company.com"></td>
+			</tr>
+			
+			<tr>
+			<td>Gender:</td>
+			<td><input type ="radio" name ="r1" id ="r1">Male<br>
+				<input type ="radio" name ="r1" id ="r2">Female
+				<span id ="sRad" style="margin-left:20px " class="val"></span></td>
+			</tr>
+			
+			<tr>
+			<td>Lucky Number:</td>
+			<td><input type ="number" id ="luckyNum" required><span style="margin-left:20px" id ="sLNum" class="val"></span></td>
+			</tr>
+			
+			<tr>
+			<td>Favorite Foods</td>
+			<td><input type="checkbox" name="c1" id="c1">Pizza<br>
+				<input type="checkbox" name="c1" id="c2">Pasta<br>
+				<input type="checkbox" name="c1" id="c3">Chinese<span style="margin-left:20px" id ="sCheck" class="val"></span>
+			</td>
+			</tr>
+		</table>
+		<input type ="button" value="Send Data" onclick="sendData()">
+		</form>
+		<span id ="resSpan"></span>
+	</div>
+	</body>
+
+</html>
+
+

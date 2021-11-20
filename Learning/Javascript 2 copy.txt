@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            var n = parseInt(prompt("Enter a number"));
+            document.write("the even number are"+n);
+            var i=0;
+            while(i<=n){
+                if(i%2==0){
+                    document.write(i+ "<br>");
+                
+                }
+                
+                i++;
+            }
+        </script>
+    </body>
+</html>

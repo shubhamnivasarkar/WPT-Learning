@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+Resume
+</title>
+</head>
+<body>
+<h1>
+<center>
+<u><b>Resume</b></u>
+</center>
+</h1>
+<b>SHUBHAM NIVASARKAR</b><br>
+<i>Vrindavan garden soceity,Khamla</I><br>
+<i>NAGPUR-440025,</I><br>
+<i>Mobile No:8999628807</i><br>
+<i><b>Email:</b> shubhamnivasarkar96@gmail.com</I><br>
+<hr>
+<b><font size=5>Educational Qualification</font></b>
+<pre>
+<b><font size=4>Qualification		Institute			University/Board			Marks		Year of passing</font></b><br>
+<font size=4>BE(EE)			NYSS				NAGPUR university			52.9%		2018</font>
+<font size=4>HSC			Hislop college			M.H Board				97		1999</font>
+<font size=4>SSC			National convention school	C.G. Board				98		1997</font>
+
+</pre><br>
+<b><font size=5>Skill Set:</font></b><br>
+<br>
+<br>
+<b>Operating system:</b>  Windows9'x,Doc<br>
+<b>Language:</b>  C/C++<br>
+<b>Front end:</b>  VB 6.0<br>
+<b>DBMS:</b>  Oracle 9i<br>
+
+
+</body>
+</html>

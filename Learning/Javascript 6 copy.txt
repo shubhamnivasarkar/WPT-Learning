@@ -1,0 +1,40 @@
+<!doctype html>
+<HTML>
+	<HEAD>
+		<TITLE>
+				min() to find minimum no in entered set of arguments
+		</TITLE>
+		<SCRIPT>
+				function min(a,b,c,d,e){
+					var mini=a;
+							
+						if(b < mini){
+							mini=b;
+						}
+						if(c < mini){
+							mini=c;
+						}
+						if(d < mini){
+							mini=d;
+						}
+						if(e < mini){
+							mini=e;
+						}
+					document.write("min = " +mini);
+				}
+		</SCRIPT>
+	</HEAD>	
+	<BODY>
+		<SCRIPT>
+				var n1 = parseInt(prompt("1st no"));
+				var n2 = parseInt(prompt("2nd no"));
+				var n3 = parseInt(prompt("3rd no"));
+				var n4 = parseInt(prompt("4th no"));
+				var n5 = parseInt(prompt("5th no"));
+				
+				document.write(n1+", "+n2+", "+n3+", "+n4+", "+n5+"<br>");
+				
+				min(n1,n2,n3,n4,n5);
+		</SCRIPT>
+	</BODY>
+</HTML>

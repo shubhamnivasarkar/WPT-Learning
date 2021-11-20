@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function squaresum(n){
+                sum = 0
+                for(i=1;i<=n;i++)
+                sum+=(2 * 1) * (2 * 1);
+                return sum;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <script>
+            var t = parseInt(prompt("Enter the number :"));
+            document.write(squaresum(t))
+        </script>
+    </body>
+</html>

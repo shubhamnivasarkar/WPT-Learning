@@ -1,0 +1,78 @@
+<h3 class="question">Question 3</h3>
+    <p class="question-desc">Create a HTML form that given below. Use JS to manipulate strings. Display the output below the button.</p>
+    <hr />
+    <div class="form">
+      <div class="field">
+        <input id="ques3-str" type="text" placeholder=" " />
+        <label>Enter String</label>
+      </div>
+      <div class="field">
+        <input id="ques3-substr" type="text" placeholder=" " />
+        <label>Enter Substring</label>
+      </div>
+      <div class="field">
+        <input id="ques3-replacestr" type="text" placeholder=" " />
+        <label>Enter Replace String</label>
+      </div>
+      <div class="field">
+        <label class="active">Options</label>
+        <div class="option-groups">
+          <span><input type="radio" name="opt" value="search" checked="" />Search</span>
+          <span><input type="radio" name="opt" value="uppercase" /> To Uppercase</span>
+          <span><input type="radio" name="opt" value="lowercase" /> To Lowercase</span>
+          <span><input type="radio" name="opt" value="trim" /> Trim</span>
+          <span><input type="radio" name="opt" value="concatenate" /> Concatnate</span>
+          <span><input type="radio" name="opt" value="replace" /> Replace</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" id="ques3-run">
+          Run
+        </button>
+        <button type="button" id="ques3-cls" onclick="clearResult('result-3')">
+          Clear
+        </button>
+      </div>
+    </div>
+    <hr>
+    <div id="result-3" class="result"></div>
+    <script>
+      document.getElementById('ques3-run').onclick = () => {
+        const str = document.getElementById('ques3-str').value;
+        const substr = document.getElementById('ques3-substr').value;
+        const replacestr = document.getElementById('ques3-replacestr').value;
+        const option = document.querySelector('input[name="opt"]:checked').value;
+        let result = "";
+        switch (option) {
+          case "search":
+            const index = str.search(substr);
+            if (index === -1) {
+              result = "Not Found!";
+            } else {
+              result = str.slice(0, index) + '<span class="highlight">';
+              result += str.slice(index, index + substr.length) + "</span>";
+              result += str.slice(index + substr.length);
+            }
+            break;
+          case "uppercase":
+            result = str.toUpperCase();
+            break;
+          case "lowercase":
+            result = str.toLowerCase();
+            break;
+          case "trim":
+            result = str.trim();
+            break;
+          case "concatenate":
+            result = str.concat(substr);
+            break;
+          case "replace":
+            result = str.replace(substr, replacestr);
+            break;
+          default:
+            result = "Invalid Option";
+        }
+        document.getElementById('result-3').innerHTML = `Result : ${result}`;
+      };
+    </script>
+  </article>
